@@ -1,13 +1,13 @@
 //convert array string into randum prime number 
 let arrayString = [1, 2, 4, 'san', 3, 'ajay', 'e', 4];
 function isPrime(num) {
-    if (num < 1 || num == 1) {
+    if (num <= 1) {
         return false;
     }
     for (let i = 2; i < num; i++) {
-        if (num % 2 == 0) {
+        if (num % i == 0) {
             return false;
-        }
+        }   
     }
     return true;
 }
